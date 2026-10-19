@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233D6448' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z'/><path d='M12 7v5l3 3'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EarlyCare — Student Wellness Companion</title>
+    <meta name="description" content="A gentle, supportive student wellness check-in companion. Reflect on your sleep, movement, hydration, and academic balance." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: {
+                50: '#FDFBF7',
+                100: '#FAF8F5',
+                200: '#F4EFE6',
+                300: '#ECE4D6',
+              },
+              forest: {
+                50: '#F2F7F4',
+                100: '#E2EEE6',
+                200: '#C5DCCF',
+                600: '#3D6448',
+                700: '#2E4F37',
+                800: '#213B29',
+                900: '#172C1E',
+                950: '#0F1E14',
+              },
+              sage: {
+                50: '#F4F7F4',
+                100: '#E8EFEA',
+                200: '#D2E2D6',
+                300: '#B6CFC0',
+                400: '#8AAFA6',
+                500: '#5F8E69',
+                600: '#4A7253',
+                700: '#38583F',
+              },
+              sand: {
+                50: '#FCFAF7',
+                100: '#F5F1E8',
+                200: '#ECE5D6',
+                300: '#DDD3BF',
+                400: '#BFB298',
+                500: '#9E9075',
+              },
+              clay: {
+                100: '#F9ECE7',
+                200: '#F2D4C9',
+                500: '#D97757',
+                600: '#C25D3B',
+              },
+              honey: {
+                100: '#FAF2DE',
+                200: '#F3E3B9',
+                500: '#DDA15E',
+                600: '#BC7D3B',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#FAF8F5] text-[#1C2920] min-h-screen antialiased selection:bg-sage-200 selection:text-forest-900 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
