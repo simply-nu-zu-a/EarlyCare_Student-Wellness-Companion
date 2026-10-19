@@ -1,0 +1,86 @@
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #FAF8F5;
+    color: #1C2920;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom gentle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2E2D6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B6CFC0;
+}
+
+/* Friendly wellness cards */
+.wellness-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECE5D6;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px -4px rgba(28, 41, 32, 0.04), 0 2px 6px -1px rgba(28, 41, 32, 0.02);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.wellness-card-interactive:hover {
+  transform: translateY(-2px);
+  border-color: #B6CFC0;
+  box-shadow: 0 10px 25px -5px rgba(46, 79, 55, 0.08);
+}
+
+.wellness-card-soft {
+  background-color: #F7FAF7;
+  border: 1px solid #E3ECE4;
+  border-radius: 1rem;
+}
+
+/* Friendly Warm Range Slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ECE5D6;
+  height: 8px;
+  border-radius: 9999px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3D6448;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(23, 44, 30, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+  background: #2E4F37;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3D6448;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(23, 44, 30, 0.2);
+  cursor: pointer;
+}
